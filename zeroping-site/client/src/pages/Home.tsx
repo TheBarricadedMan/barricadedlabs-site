@@ -146,10 +146,10 @@ function useScrollReveal() {
 function PlayBadge() {
   return (
     <img
-      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+      src="/barricadedlabs-site/google-play-badge.png"
       alt="Get it on Google Play"
       style={{
-        height: "50px",
+        height: "60px",
         width: "auto",
       }}
     />
