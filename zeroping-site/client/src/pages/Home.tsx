@@ -274,7 +274,7 @@ function Hero() {
               maxWidth: "560px",
             }}
           >
-            16 offline IT tools for developers and sysadmins. No internet. No accounts. No telemetry. Everything runs on your device.
+            16 offline IT tools for developers and sysadmins. No internet. No accounts. No telemetry. No ads. Everything runs on your device.
           </p>
 
           {/* CTA */}
@@ -389,12 +389,16 @@ function NoInternetSection() {
               label: "No telemetry",
               detail: "Zero analytics, zero crash reporting, zero tracking.",
             },
+            {
+              label: "No ads",
+              detail: "No advertisers. No promoted content. Ever.",
+            },
           ].map((item, i) => (
             <div
               key={i}
               style={{
                 padding: "1.75rem 1.5rem",
-                borderRight: i < 2 ? "1px solid rgba(244,241,234,0.08)" : "none",
+                borderRight: i < 3 ? "1px solid rgba(244,241,234,0.08)" : "none",
                 borderBottom: "none",
               }}
             >
