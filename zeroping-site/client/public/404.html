@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <script>
       window.location.replace(
-        "/barricadedlabs-site/" +
-        window.location.pathname.replace("/barricadedlabs-site/", "") +
+        "/" +
+        window.location.pathname.slice(1) +
         window.location.search +
         window.location.hash
       );

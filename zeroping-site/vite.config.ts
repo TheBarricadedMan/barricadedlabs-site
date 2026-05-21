@@ -4,7 +4,6 @@ import path from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/barricadedlabs-site/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

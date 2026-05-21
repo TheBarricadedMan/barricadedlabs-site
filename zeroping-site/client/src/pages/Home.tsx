@@ -146,7 +146,7 @@ function useScrollReveal() {
 function PlayBadge() {
   return (
     <img
-      src="/barricadedlabs-site/google-play-badge.png"
+      src="/google-play-badge.png"
       alt="Get it on Google Play"
       style={{
         height: "60px",
