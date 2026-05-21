@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ZeroPing Tools</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0E1411;
+      --bg-card:   #161d19;
+      --fg:        #F4F1EA;
+      --fg-muted:  #a8a49e;
+      --accent:    #7ec99a;
+      --border:    #2a3530;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .wordmark {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--fg);
+    }
+
+    .meta {
+      margin-top: 0.6rem;
+      font-size: 0.875rem;
+      color: var(--fg-muted);
+    }
+
+    .summary-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    .summary-box p + p { margin-top: 0.5rem; }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p { margin-bottom: 0.9rem; color: var(--fg); }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 0.5rem 0 0.9rem 1.25rem;
+      color: var(--fg);
+    }
+
+    ul li { margin-bottom: 0.35rem; }
+
+    .none-badge {
+      display: inline-block;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.1em 0.5em;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      vertical-align: middle;
+    }
+
+    a { color: var(--accent); text-decoration: underline; }
+    a:hover { color: var(--fg); }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--fg-muted);
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.5rem; }
+      .summary-box { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="wordmark">Barricaded Labs</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        ZeroPing Tools for Android &nbsp;|&nbsp; Effective date: 13/05/2026
+      </p>
+    </header>
+
+    <div class="summary-box">
+      <p><strong>Short version:</strong> ZeroPing Tools does not collect, store, transmit, or share any personal data. Everything the app does happens on your device. Nothing leaves it.</p>
+      <p>The full policy below explains this in the detail required by app store guidelines and applicable law.</p>
+    </div>
+
+
+    <h2>1. Who we are</h2>
+    <p>ZeroPing Tools is developed and published by Barricaded Labs, an independent software publisher based in Australia. You can contact us at <a href="mailto: support@barricadedlabs.com">support@barricadedlabs.com</a>.</p>
+
+
+    <h2>2. What data we collect</h2>
+    <p><span class="none-badge">None</span></p>
+    <p>ZeroPing Tools does not collect any data from you. There are no accounts, no registration, no sign-in, and no forms that submit information anywhere.</p>
+    <p>The app holds no <code>INTERNET</code> permission in its Android manifest. This is not a configuration choice -- it is an architectural one. The app has no technical ability to transmit data over a network.</p>
+
+
+    <h2>3. Data stored on your device</h2>
+    <p>Some features store data locally on your device so they work as expected between sessions. This data never leaves your device.</p>
+    <ul>
+      <li><strong>Tool history</strong> -- recent inputs and results for 15 tools, stored in app-private local storage. TOTP codes and raw hash outputs are excluded from history.</li>
+      <li><strong>TOTP secrets</strong> -- stored in app-private local storage and protected using Android hardware-backed security (Android Keystore). They are also excluded from standard Android backups.</li>
+      <li><strong>App settings and home layout</strong> -- your preferences for tool order and app behaviour, stored locally via DataStore.</li>
+      <li><strong>Encrypted backup files</strong> -- if you use the backup feature, an encrypted file is written to a location you choose on your device. The file is encrypted using PBKDF2 key derivation with AES-GCM. Barricaded Labs never has access to this file or the password that protects it.</li>
+    </ul>
+    <p>All locally stored data can be cleared at any time via Android Settings &gt; Apps &gt; ZeroPing Tools &gt; Storage &gt; Clear data.</p>
+
+
+    <h2>4. Permissions</h2>
+    <p><span class="none-badge">None declared</span></p>
+    <p>ZeroPing Tools declares no permissions in its Android manifest. The app does not request access to your camera, microphone, contacts, location, storage, notifications, or any other sensitive resource.</p>
+    <p>A few points worth noting about how specific features work without permissions:</p>
+    <ul>
+      <li><strong>QR decoding</strong> -- works via Android's share sheet. You share a QR code image from any app on your device; ZeroPing Tools receives it and decodes it locally. No camera permission is needed or requested.</li>
+      <li><strong>Backup export and import</strong> -- handled through the Android system file picker, which does not require storage permissions. The app can only read a file you explicitly select; it cannot browse or scan your storage.</li>
+      <li><strong>TOTP hardware security</strong> -- TOTP secrets are protected by the Android Keystore at the hardware level. This does not require a biometric or keyguard permission declaration; the operating system enforces it internally.</li>
+      <li><strong>No INTERNET permission</strong> -- the app has no network access of any kind. This is not a restriction applied at runtime; the permission is simply absent from the manifest.</li>
+    </ul>
+
+
+    <h2>5. Third-party services</h2>
+    <p><span class="none-badge">None</span></p>
+    <p>ZeroPing Tools does not integrate any third-party SDKs, analytics libraries, advertising networks, crash reporting services, or remote configuration services. There are no third parties involved in the operation of this app.</p>
+
+
+    <h2>6. Android backup</h2>
+    <p>Android's automatic cloud backup is disabled for ZeroPing Tools (<code>android:allowBackup="false"</code>). App data is not backed up to Google Drive or any other cloud service through the Android backup system. The only backup mechanism available is the manual, encrypted, on-device export described in section 3.</p>
+
+
+    <h2>7. Children's privacy</h2>
+    <p>ZeroPing Tools is a utility app intended for adults with technical backgrounds. It is not directed at children under the age of 13. Because the app collects no personal data from any user, there is no specific risk to children's privacy. However, the app is not designed for or marketed to children.</p>
+
+
+    <h2>8. Your rights under Australian privacy law</h2>
+    <p>The Australian Privacy Act 1988 grants you rights in relation to personal information held about you. Because ZeroPing Tools holds no personal information about you -- on our servers or anywhere else -- there is nothing for us to provide, correct, or delete on request.</p>
+    <p>If you have a question or concern about privacy, you can contact us at <a href="mailto:support@barricadedlabs.com">support@barricadedlabs.com</a>. You may also contact the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">oaic.gov.au</a>.</p>
+
+
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published at this URL with a revised effective date. We will not make changes that introduce data collection without prominent notice in the app and in the Play Store listing.</p>
+
+
+    <h2>10. Contact</h2>
+    <p>Barricaded Labs<br>
+    Email: <a href="mailto:support@barricadedlabs.com">support@barricadedlabs.com</a></p>
+
+    <footer>
+      <p>ZeroPing Tools &copy; Barricaded Labs. All rights reserved.</p>
+      <p style="margin-top:0.4rem;">This policy was last updated on 13/05/2026.</p>
+    </footer>
+
+  </div>
+</body>
+</html>

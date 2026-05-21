@@ -809,7 +809,7 @@ function Footer() {
             support@barricadedlabs.com
           </a>
           <a
-            href="https://thebarricadedman.github.io/barricadedlabs-privacy/privacy-policy.html"
+            href="https://barricadedlabs.com/privacy-policy.html"
             target="_blank"
             rel="noopener noreferrer"
             style={{
