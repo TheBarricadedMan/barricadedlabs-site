@@ -1,5 +1,5 @@
 /*
- * ZeroPing Tools — Home Page
+ * ZeroPing Almanac — Home Page
  * Design: "Dead Signal" Industrial Minimal
  * - Space Grotesk headings, IBM Plex Mono labels
  * - Brand palette: #0E1411 bg, #F4F1EA text, #7EC99A accent
@@ -190,7 +190,7 @@ function Header() {
             letterSpacing: "-0.01em",
           }}
         >
-          ZeroPing Tools
+          ZeroPing Almanac
         </span>
         <span
           style={{
@@ -283,7 +283,7 @@ function Hero() {
               href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Get ZeroPing Tools on Google Play for $2.99 AUD"
+              aria-label="Get ZeroPing Almanac on Google Play for $2.99 AUD"
               style={{
                 display: "inline-block",
                 transition: "opacity 150ms ease-out, transform 120ms ease-out",
@@ -725,7 +725,7 @@ function DownloadCTA() {
               href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Get ZeroPing Tools on Google Play for $2.99 AUD"
+              aria-label="Get ZeroPing Almanac on Google Play for $2.99 AUD"
               style={{
                 display: "inline-block",
                 transition: "opacity 150ms ease-out, transform 120ms ease-out",

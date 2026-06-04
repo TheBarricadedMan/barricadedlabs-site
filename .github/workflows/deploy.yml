@@ -31,20 +31,18 @@ jobs:
         with:
           node-version: 20
           cache: pnpm
-          cache-dependency-path: zeroping-site/pnpm-lock.yaml
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        working-directory: zeroping-site
         run: pnpm install --no-frozen-lockfile
 
       - name: Build
-        working-directory: zeroping-site
         run: pnpm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: zeroping-site/dist
+          path: dist
 
   deploy:
     needs: build
