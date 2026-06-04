@@ -239,7 +239,7 @@ function Hero() {
           >
             ZeroPing
             <br />
-            Tools
+            Almanac
             <span className="cursor-blink" style={{ marginLeft: "0.15em" }} />
           </h1>
 
